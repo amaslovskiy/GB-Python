@@ -8,11 +8,13 @@
 # или черным. Программа должна вывести сообщение об ошибке, если пользователь вводит число, которое лежит вне
 # диапазона от 0 до 36.
 num = int(input())
-if num == 0:
+if num > 36 or num < 0:
+    print('ошибка ввода')
+elif num == 0:
     print('зеленый')
-elif 1 <= num <= 10 and 19 <= num <= 28 and num % 2 != 0:
+elif 0 < num < 11 and num % 2 != 0 or 18 < num < 29 and num % 2 != 0:
     print('красный')
-elif 11 <= num <= 18 and 29 <= num <= 36 and num % 2 == 0:
+elif 10 < num < 19 and num % 2 == 0 or 28 < num < 37 and num % 2 == 0:
     print('красный')
-elif 11 <= num <= 18 and num % 2 != 0:
-
+else:
+    print('черный')
