@@ -6,7 +6,7 @@
 num = int(input())
 l_digit = num % 10  # находим последнее число
 m_digit = (num % 100) // 10  # находим среднее число
-f_digit = num // 100  # находим последнее число
+f_digit = num // 100  # находим ппервое число
 summ_digit = l_digit + m_digit + f_digit
 prod_digit = l_digit * m_digit * f_digit
 print('Сумма цифр =', summ_digit)
