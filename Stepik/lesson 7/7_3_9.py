@@ -2,13 +2,11 @@
 # каждое на отдельной строке. Напишите программу, которая выводит
 # наибольшее и второе наибольшее число последовательности.
 num = int(input())
-largest = 0
-large = 0
+largest, large = 0, 0
 for i in range(num):
     num = int(input())
     if num > largest:
-        large = largest
-        largest = num
+        large, largest = largest, num
     elif num > large:
         large = num
 print(largest, large, sep='\n')
